@@ -274,6 +274,56 @@ d[i][j] = true表示母串s的前i位（s[0..i-1]）和模式串p的前j位（p[
 
 单纯栈的应用。注意取栈顶元素前判断栈是否为空。
 
+## 21. Merge Two Sorted Lists
+
+### 题目大意
+
+合并两个有序链表。
+
+### 思路
+
+注意判断表空即可。
+
+## 22. Generate Parentheses
+
+### 题目大意
+
+生成所有配对合法的n个括号的字符串。
+
+### 思路
+
+dfs或者bfs均可。
+
+## 23. Merge k Sorted Lists
+
+### 题目大意
+
+合并n个有序链表。
+
+### 思路
+
+用优先队列取最小元素。c++的priority_queue和make_heap的堆都是大根堆，priority_queue自定义比较器需要传入重载了()的struct，而make_heap传入比较函数即可。
+
+## 24. Swap Nodes in Pairs
+
+### 题目大意
+
+将一个链表每两个数字一交换。只允许使用常数级别空间。
+
+### 思路
+
+基础的链表操作。
+
+## 25. Reverse Nodes in k-Group
+
+### 题目大意
+
+将一个链表每k个数字一翻转。只允许使用常数级别空间。
+
+### 思路
+
+此题为p24的扩展，并不困难。每k个元素一处理，让一个指针先走到第k个元素，然后从头开始改变next值即可。
+
 ## 29. Divide Two Integers
 
 ### 题目大意
